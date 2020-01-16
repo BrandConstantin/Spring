@@ -9,6 +9,8 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 
+<context:property-placeholder location="classpath:datosEmpresa.properties"/>
+
 <!-- creación de la dependencia -->
 <bean id="miInforme" class="es.spring.example.Informe"></bean>
 
@@ -18,15 +20,17 @@
 
 <bean id="miEmpleado" class="es.spring.example.JefeEmpleado">	
 	<constructor-arg ref="miInforme"></constructor-arg>
+	
+	<property name="email" value="${email}"></property>
+	<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
 </bean>
 
 <bean id="miSecretarioEmpleado" class="es.spring.example.SecretarioEmpleado">
 	<!-- debe tener el mismo nombre que el setter del SecretarioEmpleado, sin la palabra set, la primera letra en mínuscula -->
 	<property name="informeNuevo" ref="miInforme"></property>
-
+	
 	<property name="email" value="secretaria@gmail.com"></property>
 	<property name="nombreEmpresa" value="Empresa S.A"></property>
-
 </bean>
 
 </beans>

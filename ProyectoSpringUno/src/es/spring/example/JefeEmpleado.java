@@ -18,5 +18,25 @@ public class JefeEmpleado implements Empleados {
 		// TODO Auto-generated method stub
 		return "Informe presentado por el jefe con rectificaciones: " + informeNuevo.getInforme();
 	}
+	
+	private String email;
+	private String nombreEmpresa;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
 
 }
