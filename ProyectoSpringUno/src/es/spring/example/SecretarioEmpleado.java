@@ -19,5 +19,24 @@ public class SecretarioEmpleado implements Empleados {
 		// TODO Auto-generated method stub
 		return "Informe generado por el Secretario de Estado " + informeNuevo.getInforme();
 	}
+	
+	private String email;
+	private String nombreEmpresa;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
 
 }
