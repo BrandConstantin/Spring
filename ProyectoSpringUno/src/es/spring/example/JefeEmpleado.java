@@ -1,18 +1,16 @@
 package es.spring.example;
 
 public class JefeEmpleado implements Empleados {
+	//creaciÃ³n de constructor que inyecta la dependencia
 	public JefeEmpleado(CreacionInformes informeNuevo) {
 		this.informeNuevo = informeNuevo;
 	}
 
-	//creación de campo tipo creacionInforme (intefaz)
+	//creaciÃ³n  de campo tipo creacionInforme (intefaz)
 	private CreacionInformes informeNuevo;
 	
-	//creación de constructor que inyecta la dependencia
-	
-	
 	public String getTareas() {
-		return "Gestiono las cuestiones relativas a mis empleados de sección";
+		return "Gestiono las cuestiones relativas a mis empleados de secciÃ³n";
 	}
 
 	@Override

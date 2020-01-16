@@ -1,10 +1,10 @@
 package es.spring.example;
 
 public class DirectorEmpleado implements Empleados {
-	//creaci�n de campo tipo creacionInforme (intefaz)
+	//creación de campo tipo creacionInforme (intefaz)
 	private CreacionInformes informeNuevo;
 	
-	//creaci�n de constructor que inyecta la dependencia
+	//creación de constructor que inyecta la dependencia
 	public DirectorEmpleado(CreacionInformes informenuevo) {
 		this.informeNuevo = informenuevo;
 	}

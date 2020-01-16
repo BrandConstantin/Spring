@@ -1,6 +1,12 @@
 package es.spring.example;
 
 public class SecretarioEmpleado implements Empleados {
+	//creación de campo tipo creacionInforme (intefaz)
+	private CreacionInformes informeNuevo;
+
+	public void setInformeNuevo(CreacionInformes informeNuevo) {
+		this.informeNuevo = informeNuevo;
+	}
 
 	@Override
 	public String getTareas() {
@@ -11,7 +17,7 @@ public class SecretarioEmpleado implements Empleados {
 	@Override
 	public String getInforme() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Informe generado por el Secretario de Estado " + informeNuevo.getInforme();
 	}
 
 }
