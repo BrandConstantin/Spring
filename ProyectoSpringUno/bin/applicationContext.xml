@@ -23,9 +23,10 @@
 <bean id="miSecretarioEmpleado" class="es.spring.example.SecretarioEmpleado">
 	<!-- debe tener el mismo nombre que el setter del SecretarioEmpleado, sin la palabra set, la primera letra en mínuscula -->
 	<property name="informeNuevo" ref="miInforme"></property>
-	
+
 	<property name="email" value="secretaria@gmail.com"></property>
 	<property name="nombreEmpresa" value="Empresa S.A"></property>
+
 </bean>
 
 </beans>
