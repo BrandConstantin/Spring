@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class UsoEmpleados {
 
 	public static void main(String[] args) {
-		// creaci�n de objetos de tipo empleado
+		// creación de objetos de tipo empleado
 //		Empleados Empleado1 = new JefeEmpleado();
 //		Empleados Empleado2 = new SecretarioEmpleado();
 //		Empleados Empleado3 = new DirectorEmpleado();
@@ -19,6 +19,11 @@ public class UsoEmpleados {
 		Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);		
 		System.out.println(Juan.getTareas());
 		System.out.println(Juan.getInforme());
+		
+		Empleados Maria = contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		System.out.println("Maria: " + Maria.getTareas());
+		System.out.println("Maria: " + Maria.getInforme());
+		
 		contexto.close();
 	}
 
