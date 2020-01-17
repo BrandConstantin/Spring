@@ -20,5 +20,17 @@ public class DirectorEmpleado implements Empleados {
 		// TODO Auto-generated method stub
 		return "Informe creado por el Director " + informeNuevo.getInforme();
 	}
-
+	
+	// método init. Ejecutar tareas antes de que el bean esté disponible
+	// normalmente los métodos init son void
+	public void metodoInicial() {
+		System.out.println("Dentro del método init. Aquí irían las tareas a ejecutar " + 
+				"antes de que el init esté listo");
+	}
+	
+	// método destroy. Ejecutar tareas desués de que el vean haya sido utilizado
+	public void metodoFinal() {
+		System.out.println("Dentro del método destroy. Aquí irían las tareas a ejecutar " + 
+				"después de utilizar el bean");
+	}
 }
