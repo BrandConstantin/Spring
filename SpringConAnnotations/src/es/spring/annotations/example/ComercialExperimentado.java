@@ -1,5 +1,6 @@
 package es.spring.annotations.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentadoID")
@@ -14,7 +15,15 @@ public class ComercialExperimentado implements Empleados {
 	@Override
 	public String getInformes() {
 		// TODO Auto-generated method stub
-		return "Informe generado por el comercial con experiencia.";
+		return nuevoInforme.getInformeFinanciero();
 	}
 
+	private CreacionInformeFinanciero nuevoInforme;
+
+	@Autowired
+	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
+		this.nuevoInforme = nuevoInforme;
+	}
+	
+	
 }

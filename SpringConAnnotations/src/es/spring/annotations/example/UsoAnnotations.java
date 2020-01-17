@@ -18,5 +18,4 @@ public class UsoAnnotations {
 		// cerrar el contexto
 		contexto.close();
 	}
-
 }
