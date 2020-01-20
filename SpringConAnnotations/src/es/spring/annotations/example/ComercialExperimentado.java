@@ -1,6 +1,7 @@
 package es.spring.annotations.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentadoID")
@@ -18,12 +19,14 @@ public class ComercialExperimentado implements Empleados {
 		return nuevoInforme.getInformeFinanciero();
 	}
 
+	@Autowired
+	@Qualifier("informeFinancieroTrim3")
 	private CreacionInformeFinanciero nuevoInforme;
 
-	@Autowired
-	public void setNuevoInforme(CreacionInformeFinanciero nuevoInforme) {
-		this.nuevoInforme = nuevoInforme;
-	}
+//	@Autowired
+//	public void setNuevoInforme(CreacionInformeFinanciero nuevoInforme) {
+//		this.nuevoInforme = nuevoInforme;
+//	}
 
 //	@Autowired
 //	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
