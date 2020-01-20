@@ -21,9 +21,14 @@ public class ComercialExperimentado implements Empleados {
 	private CreacionInformeFinanciero nuevoInforme;
 
 	@Autowired
-	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
+	public void setNuevoInforme(CreacionInformeFinanciero nuevoInforme) {
 		this.nuevoInforme = nuevoInforme;
 	}
+
+//	@Autowired
+//	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
+//		this.nuevoInforme = nuevoInforme;
+//	}
 	
 	
 }
