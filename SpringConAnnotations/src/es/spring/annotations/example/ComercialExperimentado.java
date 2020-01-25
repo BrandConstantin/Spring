@@ -5,9 +5,11 @@ import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentadoID")
+@Scope("prototype")
 public class ComercialExperimentado implements Empleados {
 	
 	// ejecución de  código después de creación del Bean
