@@ -17,10 +17,14 @@ public class UsoAnnotations2 {
 //		Empleados Lucia = contexto.getBean("ComercialExperimentadoID", Empleados.class);
 		
 		// pedir un bean al contenedor
-		Empleados empleado = contexto.getBean("directorFinanciero", Empleados.class);
-		
+		/*Empleados empleado = contexto.getBean("directorFinanciero", Empleados.class);		
 		System.out.println(empleado.getInformes());
-		System.out.println(empleado.getTareas());
+		System.out.println(empleado.getTareas());*/
+		
+		// pedir un bean al contenedor
+		DirectorFinanciero empleado = contexto.getBean("directorFinanciero", DirectorFinanciero.class);
+		System.out.println(empleado.getEmailV());
+		System.out.println(empleado.getNombreEmpresaV());
 		
 		contexto.close();
 	}
