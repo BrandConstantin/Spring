@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h3>Hola </h3>${param.nombreAlumno }, bienvenido al curso de Spring
+			
+	<p>Respuesta: ${mensajeFinal }</p>
 </body>
 </html>
