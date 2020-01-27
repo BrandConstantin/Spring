@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Primer ejemplo con Spring</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Esto funciona!</h1>
-	
-	<a href="muestraFormularioUrl">Completar formulario</a>
+	<form action="procesarFormularioUrl" method="get">
+		<input type="text" name="nombreAlumno">
+		<input type="submit" value="Enviar">
+	</form>
 </body>
 </html>
