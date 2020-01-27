@@ -1,6 +1,9 @@
 package es.spring.mvc.example;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -13,6 +16,20 @@ public class HolaAlumnosControlador {
 	
 	@RequestMapping("procesarFormularioUrl")
 	public String procesarFormulario() { // método que procesa lo que metemos en el formulario
+		return "HolaAlumnosSpring"; 		
+	}
+	
+	@RequestMapping("procesarFormularioModelo")
+	public String otroProcesoFormulario(HttpServletRequest request, Model modelo) {
+		// inyecctar información al modelo
+		String nombre = request.getParameter("nombreAlumno");
+		nombre += " es el mejor alumno";
+		
+		String respuesta = "¿Quién es el mejor alumno? " + nombre;
+		
+		// agregando info al modelo
+		modelo.addAttribute("mensajeFinal", respuesta);
+		
 		return "HolaAlumnosSpring"; 		
 	}
 }

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="procesarFormularioUrl" method="get">
+	<form action="procesarFormularioModelo" method="get">
 		<input type="text" name="nombreAlumno">
 		<input type="submit" value="Enviar">
 	</form>
