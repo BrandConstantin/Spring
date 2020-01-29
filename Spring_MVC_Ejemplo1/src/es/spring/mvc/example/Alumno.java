@@ -1,6 +1,11 @@
 package es.spring.mvc.example;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Alumno {
+	@NotNull
+	@Size(min=2, message=" Campo requerido!")
 	private String nombre;
 	private String apellido;
 	private String optativa;
