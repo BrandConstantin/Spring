@@ -9,7 +9,7 @@
 <body>
 	<!-- utilizar las jsp tagas que viajan en el modelo -->
 	<p>El alumno con nombre <strong>${elAlumno.nombre}</strong> y apellidos <strong>${elAlumno.apellido}</strong> se ha registrado con exito!</p>
-	
+	<p>La edad del alumnos es de <strong>${elAlumno.edad}</strong> y su correo es <strong>${elAlumno.email}</strong></p>
 	<p>Asignaturas máticulado: <strong>${elAlumno.optativa}</strong> </p>
 	<p>Mátriculado en IES <strong>${elAlumno.ciudadEstudios}</strong>
 	<p>El alumno estudiara: <strong>${elAlumno.idioma}</strong>

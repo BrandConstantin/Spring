@@ -35,6 +35,12 @@
 		Ruso: <form:checkbox path="idioma" value="Ruso"/>
 		Alemán: <form:checkbox path="idioma" value="Alemán"/>
 		Rumano: <form:checkbox path="idioma" value="Rumano"/>
+		<br/>
+		Edad: <form:input path="edad" />
+			<form:errors path="edad" style="color:red;"/>
+		<br/>
+		Email: <form:input path="email" />
+			<form:errors path="email" style="color:red;"/>
 		<br/><br/><br/><br/>
 		<input type="submit" value="&&& Enviar &&&">
 	</form:form>
