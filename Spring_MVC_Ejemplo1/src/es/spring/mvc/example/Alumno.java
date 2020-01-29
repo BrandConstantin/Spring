@@ -6,6 +6,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.Negative;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Alumno {
@@ -23,6 +24,9 @@ public class Alumno {
 	@Email
 	@NotBlank(message="El campo no puede estar vacio!")
 	private String email;
+	@NotNull
+	@Pattern(regexp="[0-9]{5}", message="El CP solo puede tener 5 números")
+	private String codigoPostal;
 	
 	public String getNombre() {
 		return nombre;
@@ -65,5 +69,11 @@ public class Alumno {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
 	}	
 }
