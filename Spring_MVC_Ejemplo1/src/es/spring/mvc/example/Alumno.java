@@ -9,6 +9,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import es.spring.mvc.example.validacionespersonalizadas.CPostalMadrid;
+
 public class Alumno {
 	@NotNull
 	@Size(min=2, message=" Campo requerido!")
@@ -25,7 +27,8 @@ public class Alumno {
 	@NotBlank(message="El campo no puede estar vacio!")
 	private String email;
 	@NotNull
-	@Pattern(regexp="[0-9]{5}", message="El CP solo puede tener 5 números")
+	//@Pattern(regexp="[0-9]{5}", message="El CP solo puede tener 5 números")
+	@CPostalMadrid
 	private String codigoPostal;
 	
 	public String getNombre() {
