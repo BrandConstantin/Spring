@@ -10,6 +10,8 @@
 	<h1>Esto funciona!</h1>
 	
 	<a href="principal/muestraFormularioUrl">Completar formulario</a>
+	
+	<a href="alumno/muestraFormulario">Registrar alumno</a>
 
 </body>
 </html>
