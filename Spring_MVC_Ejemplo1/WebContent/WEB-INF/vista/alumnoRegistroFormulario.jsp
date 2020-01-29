@@ -41,6 +41,9 @@
 		<br/>
 		Email: <form:input path="email" />
 			<form:errors path="email" style="color:red;"/>
+		<br/>
+		CP: <form:input path="codigoPostal" />
+			<form:errors path="codigoPostal" style="color:red;"/>
 		<br/><br/><br/><br/>
 		<input type="submit" value="&&& Enviar &&&">
 	</form:form>
