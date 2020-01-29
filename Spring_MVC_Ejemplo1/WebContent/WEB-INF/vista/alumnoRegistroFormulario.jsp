@@ -10,6 +10,7 @@
 <body>
 	<form:form action="procesarFormulario" modelAttribute="elAlumno">
 		Nombre: <form:input path="nombre" /> <!-- el mismo nombre que el get, sin el get -->
+				<form:errors path="nombre" style="color:red;"/>
 		<br/>
 		Apellidos: <form:input path="apellido" />
 		<br/>
@@ -33,6 +34,7 @@
 		Árabe: <form:checkbox path="idioma" value="Árabe"/>
 		Ruso: <form:checkbox path="idioma" value="Ruso"/>
 		Alemán: <form:checkbox path="idioma" value="Alemán"/>
+		Rumano: <form:checkbox path="idioma" value="Rumano"/>
 		<br/><br/><br/><br/>
 		<input type="submit" value="&&& Enviar &&&">
 	</form:form>
