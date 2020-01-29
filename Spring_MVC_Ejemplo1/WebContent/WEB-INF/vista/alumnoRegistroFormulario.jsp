@@ -22,6 +22,18 @@
 			<form:option value="Pintura" label="Pintura" />
 		</form:select>
 		<br/>
+		<p>Escoge instituto de estudio:</p>
+		Barcelona: <form:radiobutton path="ciudadEstudios" value="Barcelona"/>
+		Madrid: <form:radiobutton path="ciudadEstudios" value="Madrid"/>
+		Bilbao: <form:radiobutton path="ciudadEstudios" value="Bilbao"/>
+		La Coruña: <form:radiobutton path="ciudadEstudios" value="La Coruña"/>
+		<br/>
+		<p>Que idiomas quieres estudiar?</p>
+		Chino: <form:checkbox path="idioma" value="Chino"/>
+		Árabe: <form:checkbox path="idioma" value="Árabe"/>
+		Ruso: <form:checkbox path="idioma" value="Ruso"/>
+		Alemán: <form:checkbox path="idioma" value="Alemán"/>
+		<br/><br/><br/><br/>
 		<input type="submit" value="&&& Enviar &&&">
 	</form:form>
 </body>
