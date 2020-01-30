@@ -1,7 +1,7 @@
 # Spring
- Curso de iniciación de Spring realizado con ##https://www.pildorasinformaticas.es/course/curso-spring/##
+ Curso de iniciación de Spring realizado con ## https://www.pildorasinformaticas.es/course/curso-spring/
 
-###Contenido:##
+### Contenido:
 ...
 - Inversion of control
 - Inyección de dependencias
